@@ -1,43 +1,8 @@
 body {
-    background: black;
-    display: flex;
-    flex-direction: column;
-    min-height: 98vh;
-}
-
-a:link {
-  text-decoration: underline;
-  color: white;
-}
-
-a:visited {
-  text-decoration: underline;
-  color: white;
-}
-
-a:hover {
-  color: #9FB1F5;
-}
-
-.nav-item a{
-  text-decoration: none;
-  color: white;
-}
-
-.nav-item a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-.nav-item a:hover {
-  text-decoration: none;
-  color: #9FB1F5;
-}
-
-.page-container {
-  margin-top: 4%;
-  margin-left: 5%;
-  flex: 1;
+  background: #FBFBFB;
+  display: flex;
+  flex-direction: column;
+  min-height: 98vh;
 }
 
 .nav-item {
@@ -86,7 +51,7 @@ a:hover {
 .bar1, .bar2, .bar3 {
   width: 20px;
   height: 2px;
-  background-color: white;
+  background-color: black;
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -107,49 +72,70 @@ a:hover {
   display: block;
 }
 
-.name {
-  position: relative;
-  display: flex;
-  margin: 0px;
-  padding-top: 4%;
-  font-size: 28px;
-  font-family: 'Inconsolata', monospace;
-  color: white;
-  width: 85%;
+.page-container {
+  margin-top: 5%;
+  margin-left: 6%;
+  display: inline-block;
 }
 
-.para-container {
-  position: relative;
-  margin-top: 8%;
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.project-container {
   display: flex;
   flex-direction: row;
+  padding-bottom: 7%;
 }
 
-.para {
+.img {
+  object-fit: cover;
+  height: 100%;
+  width: 400px;
+  padding-right: 5%;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  margin-top: 2%;
+  font-size: 24px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.text {
   font-family: 'Karla', sans-serif;
-  color: white;
-  font-size: 22px;
-  font-weight: 400;
-  width: 40%;
-  padding-right: 8%;
+  font-size: 18px;
+  width: 90%;
+  padding-top: 1%;
 }
 
 .footer {
-  padding-left: 1%;
+  margin-top: 3%;
+  padding: 1%;
   padding-bottom: .5%;
 }
 
-
 .footer-text {
   font-family: 'Karla', sans-serif;
-  color: white;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-a.bold:link {
-  font-weight: bold;
+a.special-link {
+  text-decoration: underline;
 }
 
-a.bold:visited {
-  font-weight: bold;
+a.special-link:hover {
+  color: #9FB1F5;
 }

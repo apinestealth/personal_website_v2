@@ -8,9 +8,29 @@
     <link rel="stylesheet" href="stylesheet-project.css">
   </head>
   <body>
-    <div class='back-button'>
-      <a href='index.html'><div class='back-text'>home</div></a>
-    </div>
+    <nav class='nav-bar' onclick="dropMenu(this)">
+      <ul class='nav-menu'>
+        <li class='nav-item'>
+          <a href='index.html' class='nav-link'>home</a>
+        </li>
+        <li class='nav-item'>
+          <a href='projects.html' class='nav-link'>projects</a>
+        </li>
+        <li class='nav-item'>
+          <a href='about.html' class='nav-link'>about</a>
+        </li>
+      </ul>
+      <div class='hamburger' onclick="dropMenu(this)">
+        <div class='bar1'></div>
+        <div class='bar2'></div>
+        <div class='bar3'></div>
+      </div>
+    </nav>
+    <script>
+      function dropMenu(x) {
+        x.classList.toggle('change');
+      }
+    </script>
     <div class='page-container'>
       <div class='title'>EDSTRUMENTS</div>
       <div class='header-container'>
@@ -68,7 +88,6 @@
     </div>
     <div class='footer'>
       <div class='footer-text'>
-        <b>Let’s chat:</b> coopgreene [at] gmail [dot] com
         <br>Website created by me, feel free to check out the code <a href='https://github.com/apinestealth/personal_website_v2'>here</a>
       </div>
     </div>

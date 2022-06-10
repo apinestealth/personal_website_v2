@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>About</title>
+    <link rel="shortcut icon" type="image/ico" href="icon_v1.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Karla:ital,wght@0,400;0,700;1,500;1,800&display=swap" rel="stylesheet">
+    <!-- Served to all users -->
+    <link rel="stylesheet" href="stylesheet-about.css">
+    <!-- Served to screens that are less than 800px wide -->
+    <link rel="stylesheet" href="stylesheet-about.css" media="(max-width: 799px)" />
+  </head>
+  <body>
+    <nav class='nav-bar' onclick="dropMenu(this)">
+      <ul class='nav-menu'>
+        <li class='nav-item'>
+          <a href='index.html' class='nav-link'>home</a>
+        </li>
+        <li class='nav-item'>
+          <a href='projects.html' class='nav-link'>projects</a>
+        </li>
+        <li class='nav-item'>
+          <a href='about.html' class='nav-link'>about</a>
+        </li>
+      </ul>
+      <div class='hamburger' onclick="dropMenu(this)">
+        <div class='bar1'></div>
+        <div class='bar2'></div>
+        <div class='bar3'></div>
+      </div>
+    </nav>
+    <script>
+      function dropMenu(x) {
+        x.classList.toggle('change');
+      }
+    </script>
+    <div class='page-container'>
+      <div class='headshot'>
+          <img class='my-pic' src="pics/me.jpg"></img>
+      </div>
+      <div class='about-container'>
+        <div class='title'>About Me</div>
+        <div class='text'>
+          I am a product designer interested in making our technological infrastructure more useable, beautiful, and fun. I am deeply committed to the idea that the future of technology is more just and equitable.
+        </div>
+        <div class='title'>Background</div>
+        <div class='text'>
+          I'm originally from Alabama, but moved to the West Coast for an education. At Stanford University, I took computer science and design classes in addition to picking up a degree in Comparative Studies in Race and Ethnicity and completing an honors thesis about the legacy of race, power, and wealth in my hometown. I am a systems-thinker and storyteller through and through.
+        </div>
+        <div class='skills-container'>
+          <div class='skills'>
+            <b>Skills</b>
+            <br>User flows
+            <br>Wireframing
+            <br>Prototyping
+            <br>Data visualization
+            <br>Branding & logo design
+          </div>
+          <div class='skills'>
+            <b>Tools</b>
+            <br>Figma
+            <br>Adobe Illustrator
+            <br>Adobe Photoshop
+            <br>Adobe After Effects
+            <br>Adobe Premier Pro
+            <br>Procreate
+            <br>Blender
+            <br>ArcGIS
+          </div>
+          <div class='skills'>
+            <b>Languages</b>
+            <br>HTML & CSS
+            <br>Javascript
+            <br>Python
+          </div>
+        </div>
+        <div class='title'>Contact</div>
+        <div class='text'>
+          coopgreene@gmail.com &nbsp;|&nbsp;
+          <a href='https://github.com/apinestealth'> github</a>
+            &nbsp;|&nbsp;
+          <a href='https://www.linkedin.com/in/annabgreene/'> linkedin</a>
+          &nbsp;|&nbsp;
+          <a href='anna-greene-resume.pdf'> resume</a>
+        </div>
+      </div>
+    </div>
+    <div class='footer'>
+      <div class='footer-text'>
+        <br>Website created by me, feel free to check out the code <a href='https://github.com/apinestealth/personal_website_v2'>here</a>
+      </div>
+    </div>
+  </body>
+</html>

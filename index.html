@@ -11,8 +11,31 @@
     <link rel="stylesheet" href="stylesheet-home-small.css" media="(max-width: 799px)" />
   </head>
   <body>
+    <nav class='nav-bar' onclick="dropMenu(this)">
+      <ul class='nav-menu'>
+        <li class='nav-item'>
+          <a href='index.html' class='nav-link'>home</a>
+        </li>
+        <li class='nav-item'>
+          <a href='projects.html' class='nav-link'>projects</a>
+        </li>
+        <li class='nav-item'>
+          <a href='about.html' class='nav-link'>about</a>
+        </li>
+      </ul>
+      <div class='hamburger' onclick="dropMenu(this)">
+        <div class='bar1'></div>
+        <div class='bar2'></div>
+        <div class='bar3'></div>
+      </div>
+    </nav>
+    <script>
+      function dropMenu(x) {
+        x.classList.toggle('change');
+      }
+    </script>
     <div class='page-container'>
-      <div class='name'>ANNA GREENE IS A DESIGNER, ARTIST, AND CODER</div>
+      <div class='name'>ANNA GREENE IS A PRODUCT DESIGNER WITH AN EXPERTISE IN CREATING HUMAN-CENTERED DIGITAL TOOLS FROM CONCEPTION TO FINAL PRODUCT</div>
       <div class='para-container'>
         <div class='para'>
           Currently,
@@ -37,7 +60,6 @@
     </div>
     <div class='footer'>
       <div class='footer-text'>
-        <b>Let’s chat:</b> coopgreene [at] gmail [dot] com
         <br>Website created by me, feel free to check out the code <a href='https://github.com/apinestealth/personal_website_v2'>here</a>
       </div>
     </div>
